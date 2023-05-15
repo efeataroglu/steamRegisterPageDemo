@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --darkGray: hsl(227, 16%, 11%);
+  --gray: hsl(225, 7%, 22%);
+  --black: hsl(240, 15%, 11%);
+  --darkBlue: hsl(205, 39%, 26%);
+  --blue: hsl(207, 100%, 55%);
+  --white: hsl(0, 0%, 100%);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  display: inline-block;
+  background-color: var(--gray);
+  border: 0;
+  padding: 25px 10px;
+  color: var(--white);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  background-color: var(--gray);
+  border: none;
+  box-shadow: none;
+  color: var(--white);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"]:active {
+  background-color: var(--gray);
+}
+
+label {
+  text-transform: uppercase;
+}
+
+body {
+  background: linear-gradient(90deg, #1c2838 0%, #29475d 100%);
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: 0;
+}
+
+.card-header {
+  background-color: var(--darkGray);
+  text-align: center;
+}
+
+.card-header img {
+  margin-left: 55px;
+  cursor: pointer;
+}
+
+.card-body {
+  background-color: var(--black);
+  color: var(--blue);
+}
+
+.btn.btn-primary {
+  background: linear-gradient(90deg, #06bfff 0%, #2d73ff 100%);
+}
+
+.btn.btn-primary:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.btn.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.form-control.valid {
+  border: 1.5px dotted green;
+}
+.form-control.error {
+  border: 1.5px dotted red;
+}
