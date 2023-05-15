@@ -86,3 +86,10 @@ body {
 .form-control.error {
   border: 1.5px dotted red;
 }
+
+@media only screen and (max-width: 1200px) {
+  .card-header img {
+    cursor: pointer;
+    width: 150px;
+  }
+}
